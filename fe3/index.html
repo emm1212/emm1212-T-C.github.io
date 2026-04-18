@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T/C Coffee | قهوة متخصصة وحلويات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <!-- ربط ملف التصميم -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">
+            <h1>T/C Coffee</h1>
+            <p>قهوة متخصصة • حلويات فاخرة</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#menu">المنيو</a></li>
+                <li><a href="#contact">تواصل</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cartIcon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cartCount">0</span>
+        </div>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <div class="container">
+        <h2>قهوة مميزة • طعم لا يُنسى</h2>
+        <p>أفضل أنواع الكيك، التشيز كيك، البيتزا والمشروبات</p>
+        <a href="#menu" class="btn">استعرض المنيو</a>
+    </div>
+</section>
+
+<section id="menu" class="section">
+    <div class="container">
+        <h2 class="section-title">قائمتنا</h2>
+        <div class="tabs" id="tabsContainer"></div>
+        <div id="menuGrid" class="menu-grid"></div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title">تواصل معنا</h2>
+        <div class="contact-info">
+            <div class="contact-card">
+                <i class="fab fa-whatsapp"></i>
+                <h3>واتساب</h3>
+                <button class="btn" id="whatsappBtn" style="margin-top:15px;">أرسل رسالة</button>
+            </div>
+            <div class="contact-card">
+                <i class="fab fa-instagram"></i>
+                <h3>انستغرام</h3>
+                <button class="btn" id="instagramBtn" style="margin-top:15px;">تابعنا</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 T/C Coffee - جميع الحقوق محفوظة</p>
+</footer>
+
+<div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h3>سلة الطلبات</h3>
+        <button class="close-cart" id="closeCartBtn">&times;</button>
+    </div>
+    <ul id="cartItemsList" class="cart-items"></ul>
+    <div class="cart-total">الإجمالي: <span id="cartTotal">0</span>ر.ي</div>
+    <button class="checkout-btn" id="checkoutBtn">إتمام الطلب عبر واتساب</button>
+</div>
+
+
+<!-- ========== ربط ملف الجافاسكريبت ========== -->
+<script src="script.js"></script>
+</body>
+</html> 
